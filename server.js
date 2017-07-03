@@ -24,7 +24,7 @@ app.use(function(req, res, next) {
 });
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/Iganiq8o'); //connect to the database
+mongoose.connect('mongodb://investigation:penpaper220@ds139942.mlab.com:39942/investigation/Iganiq8o'); //connect to the database
 
 var port = process.env.PORT || 8080;        // set our port
 
