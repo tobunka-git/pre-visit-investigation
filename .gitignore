@@ -1,3 +1,4 @@
 .git
 node_modules
 heroku-cli-v6.12.0-a504409-linux-x64
+heroku.tar.gz

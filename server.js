@@ -24,7 +24,7 @@ app.use(function(req, res, next) {
 });
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://investigation:passw0rd@ds139942.mlab.com:39942/investigation/Iganiq8o'); //connect to the database
+mongoose.connect(process.env.MONGODB_URI); //connect to the database
 
 var port = process.env.PORT || 8080;        // set our port
 
