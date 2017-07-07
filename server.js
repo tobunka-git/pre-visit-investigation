@@ -43,13 +43,13 @@ router.get('/', function(req, res) {
 });
 
 // more routes for our API will happen here
-router.route('/users/sid/:support_id')
+router.route('/sid/:support_id')
   .get(function (req, res) {
        User.findOne( {'support_id' : req.params.support_id }, "support_id", function (err, user) {
             if(err)
                 res.send(err);
          
-            res.json({'support_id': user.support_id});
+            res.json(user);
        });
    });
 
