@@ -49,7 +49,7 @@ router.route('/users/sid/:support_id')
             if(err)
                 res.send(err);
          
-            res.json({'support_id': user.sid});
+            res.json({'support_id': user.support_id});
        });
    });
 
